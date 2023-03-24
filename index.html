@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<style>
+    .margem_pagina{
+        margin: auto;
+        width: 80%;
+        margin-top: -5px;
+        background-color: rgb(196, 241, 255);
+    }
+</style>  
+<html lang="pt-br" class="margem_pagina">
+    <head>
+        <meta charset="utf-8">
+        <title>BIOWELL ITENS INFORMÁTICA</title>
+        <meta name="author" content="Rafael Souza da Silva">
+        <meta name="description" content="Contém uma lista com diversos itens de informática dispobíveis na empresa, bem como suas quantidades e situações">
+        <meta name="keywords" content="informática, eletônicos, computador, fones, sucata, teclados, monitores, itens diveros">
+
+        <style>
+            .p1{
+                text-align: center;
+                font-size: clamp(15px, 7px + 2.5vw, 200%);
+                margin-top: -9%;
+                margin-left: 16%;
+                margin-inline-end: 6%;
+                font-family: Arial, Helvetica, sans-serif;
+                color: brown;
+                
+            }
+            
+            .date{
+                text-align: right;
+                margin-left: 25%;
+                position: relative;
+                font-size: clamp(5px, 10px + 2vw, 1000%);
+                font-family: sans-serif;
+            }
+            .borda_tabela{
+                border-width:  1px;
+                border-style: solid;
+                border-color: black;
+                margin: auto; 
+                width: 100%;
+            }
+            .borda_inferior{
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+                border-bottom-color: black;
+            }
+
+            .footer{
+                border: solid black;
+                border-width: 1px;
+                padding: 15px;
+                padding-bottom: 2%;
+                margin-bottom: 2%;
+                margin-top: 42%;
+                text-align: center;
+                font-family: sans-serif;
+                font-size: clamp(5px, 7px + 1vw, 100%);
+            }
+            .h1{
+                text-align: center;
+                font-size: clamp(10px, 12px + 2vw, 200%);
+            }
+            .borda_login{
+                
+                border-style: solid;
+                border-width: 1px;
+                border-color: black;
+                background-color: rgb(0, 0, 0, 0.1);
+                top: 5%;
+                left: 21%;
+                width: 20%;
+                padding-top: 2%;
+                margin: 19%;
+                position: absolute;
+                padding-bottom: 1%;
+            }
+            .center_input{
+                padding-right: 1%;
+                position: absolute;
+                left: 8%;                
+                width: 80%;
+            }
+            .button{
+                position: relative;
+                left: 8.5%;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="date"> 
+            <script class="date" language="JavaScript">
+
+                document.write("<font color='#000000' size='3' face='sans-serif'>")
+                var mydate=new Date()
+                var year=mydate.getYear()
+                if (year<2000)
+                year += (year < 1900) ? 1900 : 0
+                var day=mydate.getDay()
+                var month=mydate.getMonth()
+                var daym=mydate.getDate()
+                if (daym<10)
+                daym="0"+daym
+                var dayarray=new Array("Domingo","Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sábado")
+                var montharray=new Array(" de Janeiro de "," de Fevereiro de "," de Março de ","de Abril de ","de Maio de ","de Junho de","de Julho de ","de Agosto de ","de Setembro de "," de Outubro de "," de Novembro de "," de Dezembro de ")
+                document.write("   "+dayarray[day]+", "+daym+" "+montharray[month]+year+" ")
+                document.write("</b></i></font>")
+                </script>
+        </div>
+        <h1 class="h1">Login Biowell America Itens Informática</h1>
+        <form class="borda_login">
+            
+            <input type="email" placeholder="Email" class="center_input" class="form-campo" id="email">
+            <div class="form-msg-erro" id="msg-email"></div>
+            <br> <br>
+
+            <input type="password" placeholder="Senha" class="center_input" class="form-campo" id="senha"> 
+            <div class="form-msg-erro" id="msg-senha"></div>
+
+            <br><br>
+            <a href="listagem-itens-biowell.vercel.app"><button class="button">Entrar</button></a>
+
+        </form>
+        <footer>
+            <div class="footer">
+                <p>Todos os direitos reservados  Dev_Ultra © 2023   devultra7.7@gmail.com</p>
+            </div>
+        </footer>
+    </body>
+    
+</html>
